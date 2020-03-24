@@ -1,0 +1,29 @@
+
+  <div class="row">
+    <div class="col-md-3 col-sm-12" *ngFor="let stu of faculties">
+        <div class="card">
+        <div class="img">
+        <img class="card-img-top" src="{{ stu.FacultyImage }}" alt="Card image cap"></div>
+        <div class="card-body">
+            <h5 class="card-title">{{ stu.FacultyName }}</h5>
+            <h6 class="designation"> {{ stu.FacultyDesignation }} </h6>
+            <hr>
+            <h6 class="edu"> {{ stu.FacultyHighestEducation }} </h6>
+            <hr>
+            <div class="row detail">
+                <div class="col-md-6 col-sm-6">Experience</div>
+                <div class="col-md-6 col-sm-6">Working Since</div>
+            </div>
+            <div class="row info">
+                <div class="col-md-6 col-sm-6" style="color: #3398dc;">{{ stu.FacultyExperienceInYears }}+</div>
+                <div class="col-md-6 col-sm-6" style="color: #585f69;">{{ stu.FacultyWorkingSince }}</div>
+            </div>
+            <hr>
+            <div class="view">
+              <a (click)="readDetails(stu.FacultyID)"> Full Profile <i class="fa fa-angle-double-right"></i> </a>
+            </div>
+        </div>
+    </div>
+    <br>
+    </div>
+    </div>

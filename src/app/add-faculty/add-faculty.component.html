@@ -1,0 +1,191 @@
+<div class="container">
+    <form class="form-horizontal" #FacultyForm="ngForm" (ngSubmit)="insert(FacultyForm.value)">
+        <fieldset>
+            
+            <!-- Form Name -->
+            <label *ngIf="id===null">
+                Add Faculty
+            </label>
+            <label *ngIf="id!==null">
+                Edit Faculty
+            </label>
+
+            <!-- Text Input -->
+            <div class="form-group row">
+                <label for="email" class="col-md-3">Faculty Name : </label>
+                <input
+                    type="text"
+                    class="form-control"
+                    name="FacultyName"
+                    [(ngModel)]="faculty.FacultyName"
+                    placeholder="FacultyName"
+                    class="col-md-6">
+            </div>
+
+            <!-- Text Input -->
+            <div class="form-group row">
+                <label for="email" class="col-md-3">Faculty Designation : </label>
+                <input
+                    type="text"
+                    class="form-control"
+                    name="FacultyDesignation"
+                    [(ngModel)]="faculty.FacultyDesignation"
+                    placeholder="FacultyDesignation"
+                    class="col-md-6">
+            </div>
+
+            <!-- Text Input -->
+            <div class="form-group row">
+                <label for="email" class="col-md-3">Faculty Highest Educatione : </label>
+                <input
+                    type="text"
+                    class="form-control"
+                    name="FacultyHighestEducation"
+                    [(ngModel)]="faculty.FacultyHighestEducation"
+                    placeholder="FacultyHighestEducation"
+                    class="col-md-6">
+            </div>
+
+            <!-- Text Input -->
+            <div class="form-group row">
+                <label for="email" class="col-md-3">Faculty Experience In Years : </label>
+                <input
+                    type="text"
+                    class="form-control"
+                    name="FacultyExperienceInYears"
+                    [(ngModel)]="faculty.FacultyExperienceInYears"
+                    placeholder="FacultyExperienceInYears"
+                    class="col-md-6">
+            </div>
+
+            <!-- Text Input -->
+            <div class="form-group row">
+                <label for="email" class="col-md-3">Faculty Working Since : </label>
+                <input
+                    type="text"
+                    class="form-control"
+                    name="FacultyWorkingSince"
+                    [(ngModel)]="faculty.FacultyWorkingSince"
+                    placeholder="FacultyWorkingSince"
+                    class="col-md-6">
+            </div>
+
+            <!-- Text Input -->
+            <div class="form-group row">
+                <label for="email" class="col-md-3">Faculty Mobile Number : </label>
+                <input
+                    type="text"
+                    class="form-control"
+                    name="FacultyMobileNumber"
+                    [(ngModel)]="faculty.FacultyMobileNumber"
+                    placeholder="FacultyMobileNumber"
+                    class="col-md-6">
+            </div>
+
+            <!-- Text Input -->
+            <div class="form-group row">
+                <label for="email" class="col-md-3">Faculty Email Address : </label>
+                <input
+                    type="text"
+                    class="form-control"
+                    name="FacultyEmailAddress"
+                    [(ngModel)]="faculty.FacultyEmailAddress"
+                    placeholder="FacultyEmailAddress"
+                    class="col-md-6">
+            </div>
+
+            <!-- Text Input -->
+            <div class="form-group row">
+                <label for="email" class="col-md-3">Faculty Seating : </label>
+                <input
+                    type="text"
+                    class="form-control"
+                    name="FacultySeating"
+                    [(ngModel)]="faculty.FacultySeating"
+                    placeholder="FacultySeating"
+                    class="col-md-6">
+            </div>
+
+            <!-- Text Input -->
+            <div class="form-group row">
+                <label for="email" class="col-md-3">Faculty Profile Description : </label>
+                <input
+                    type="text"
+                    class="form-control"
+                    name="FacultyProfileDescription"
+                    [(ngModel)]="faculty.FacultyProfileDescription"
+                    placeholder="FacultyProfileDescription"
+                    class="col-md-6">
+            </div>
+
+            <!-- Text Input -->
+            <div class="form-group row">
+                <label for="email" class="col-md-3">Faculty Area Specialization : </label>
+                <input
+                    type="text"
+                    class="form-control"
+                    name="FacultyAreaSpecialization"
+                    [(ngModel)]="faculty.FacultyAreaSpecialization"
+                    placeholder="FacultyAreaSpecialization"
+                    class="col-md-6">
+            </div>
+
+            <!-- Text Input -->
+            <div class="form-group row">
+                <label for="email" class="col-md-3">Faculty Subjects Taught : </label>
+                <input
+                    type="text"
+                    class="form-control"
+                    name="FacultySubjectsTaught"
+                    [(ngModel)]="faculty.FacultySubjectsTaught"
+                    placeholder="FacultySubjectsTaught"
+                    class="col-md-6">
+            </div>
+
+            <!-- Text Input -->
+            <div class="form-group row">
+                <label for="email" class="col-md-3">Faculty Image : </label>
+                <input
+                    type="text"
+                    class="form-control"
+                    name="FacultyImage"
+                    [(ngModel)]="faculty.FacultyImage"
+                    placeholder="FacultyImage"
+                    class="col-md-6">
+            </div>
+
+            <!-- Text Input -->
+            <div class="form-group row">
+                <label for="email" class="col-md-3">Faculty Department ID : </label>
+                <input
+                    type="text"
+                    class="form-control"
+                    name="FacultyDepartmentID"
+                    [(ngModel)]="faculty.FacultyDepartmentID"
+                    placeholder="FacultyDepartmentID"
+                    class="col-md-6">
+            </div>
+
+            <!-- Text Input -->
+            <div class="form-group row">
+                <label for="email" class="col-md-3">Faculty Sequence : </label>
+                <input
+                    type="text"
+                    class="form-control"
+                    name="FacultySequence"
+                    [(ngModel)]="faculty.FacultySequence"
+                    placeholder="FacultySequence"
+                    class="col-md-6">
+            </div>
+
+            <div class="form-group row">
+                <div class="col-md-4">
+                    <button id="button1id" *ngIf="id===null" type="submit"  name="button1id" class="btn btn-success"> Submit</button>
+                    <button id="button2id" *ngIf="id!==null" type="submit" name="button2id" class="btn btn-success">Edit Data</button>
+                    <button id="button3id" *ngIf="id!==null" routerLink = "../../../faculties" name="button2id" class="btn btn-danger">Cancle</button>
+                    <button id="button4id" *ngIf="id===null" routerLink = "../../faculties" name="button2id" class="btn btn-danger">Cancle</button>
+                </div>
+            </div>
+        </fieldset>
+    </form>
+</div>

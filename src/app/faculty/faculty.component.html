@@ -1,0 +1,113 @@
+
+<div class="bg">
+    <br>
+
+<div class="row">
+    <div class="col-md-3 col-sm-12">
+        <div class="card">
+        <div class="img">
+        <img class="card-img-top" src="{{ faculty.FacultyImage }}" alt="Card image cap"></div>
+        <div class="card-body">
+            <h5 class="card-title">{{ faculty.FacultyName }}</h5>
+            <h6 class="designation"> {{ faculty.FacultyDesignation }} </h6>
+            <hr>
+            <h6 class="edu"> {{ faculty.FacultyHighestEducation }} </h6>
+            <hr>
+            <div class="row detail">
+                <div class="col-md-6 col-sm-6">Experience</div>
+                <div class="col-md-6 col-sm-6">Working Since</div>
+            </div>
+            <div class="row info">
+                <div class="col-md-6 col-sm-6" style="color: #3398dc;">{{ faculty.FacultyExperienceInYears }}+</div>
+                <div class="col-md-6 col-sm-6" style="color: #585f69;">{{ faculty.FacultyWorkingSince }}</div>
+            </div>
+            <hr>
+
+            <div class="row">
+                <div class="col-md-3 icon">  
+                    <i class="fa fa-phone"></i>
+                </div>
+                <div class="col-md-9 ">
+                    <h6 class="data"> (M) : +91 - {{ faculty.FacultyMobileNumber }} </h6>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-3 icon">  
+                    <i class="fa fa-envelope"></i>
+                </div>
+                <div class="col-md-9 ">
+                    <h6 class="data">{{ faculty.FacultyEmailAddress }} </h6>
+                </div>
+            </div>   
+
+            <div class="row">
+                <div class="col-md-3 icon">  
+                    <i class="fa fa-map-marker"></i>
+                </div>
+                <div class="col-md-9 ">
+                    <h6 class="data">{{ faculty.FacultySeating }} </h6>
+                </div>
+            </div>  
+        </div>
+    </div>
+    <br>
+    </div>
+
+    <div class="col-md-9 col-sm-12">
+        <div class="card">
+            <div class="card-body profile">
+              Profile
+            </div>
+            <div class="card-text dec">
+                {{ faculty.FacultyProfileDescription }}
+            </div>
+            
+            <div class="row">
+                <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-3 heading">
+                        Area of Specialization
+                    </div>
+                    <div class="col-md-9 cont">
+                        {{ faculty.FacultyAreaSpecialization }}
+                    </div>
+                </div><br>
+
+                <div class="row card-text">
+                    <div class="col-md-3 heading">
+                        Subjects Taught
+                    </div>
+                    <div class="col-md-9 cont">
+                        {{ faculty.FacultySubjectsTaught }}
+                    </div>
+                </div><br>
+
+                <div class="row card-text">
+                    <div class="col-md-3 heading">
+                        Working Since
+                    </div>
+                    <div class="col-md-9 cont">
+                        {{ faculty.FacultyWorkingSince }}
+                    </div>
+                </div><br>
+            </div>
+            </div>     
+        </div>
+
+            <br>
+            <button class="btn btn-primary" routerLink = "../../faculties"> 
+                Back
+            </button> 
+
+            <button class="btn btn-warning" routerLink = "../../faculties/edit/{{id}}"> 
+                Edit
+            </button>
+            
+            <button class="btn btn-danger" (click)="deleteFaculty()">
+                Delete
+            </button>
+        </div>
+    </div>
+</div>
+

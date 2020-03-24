@@ -1,0 +1,85 @@
+.row {
+    margin: auto;
+}
+
+.card-title{
+    text-align: center;
+}
+
+.designation {
+    color: #72c02c;
+    text-align: center;
+    font-size: 14px;
+}
+
+.edu {
+    text-align: center;
+    line-height: -5px;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.detail {
+    text-align: center;
+    font-size: 12px;
+    font-weight: 600;
+    color: #bbb;
+}
+.info {
+    text-align: center;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.icon {
+    font-size: 14px;
+    color: #555;
+    text-align: right;
+}
+.data {
+    text-align: left;
+    color: #555;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.profile {
+    font-weight: 600;
+    font-size: 22px;
+    font-family: sans-serif;
+    border-left: 2px solid #72c02c;
+    border-bottom: 1px dotted #555;
+    padding: 18px 0 8px 25px;
+    border-radius: 4px;
+}
+
+.dec {
+    padding: 30px;
+    text-align: justify;
+    color: #555;
+}
+
+.cont {
+    text-align: justify;
+    font-weight: normal;  
+    color: #555;
+}
+
+.heading {
+    text-align: right;
+    font-weight: 600;
+    color: #555;
+}
+
+.bg {
+    background-color: #eee;
+}
+
+.img {
+    padding: 15px;
+}
+
+button {
+    margin-left: 50px;
+}
+ 
